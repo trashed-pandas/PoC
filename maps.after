@@ -1,0 +1,16 @@
+00400000-00401000 r-xp 00000000 08:01 2344515                            /home/empty/devel/experimentation/streams_buffer_test
+00600000-00601000 rw-p 00000000 08:01 2344515                            /home/empty/devel/experimentation/streams_buffer_test
+7ffff7a7d000-7ffff7bd6000 r-xp 00000000 08:01 7005669                    /lib/libc-2.11.3.so
+7ffff7bd6000-7ffff7dd5000 ---p 00159000 08:01 7005669                    /lib/libc-2.11.3.so
+7ffff7dd5000-7ffff7dd9000 r--p 00158000 08:01 7005669                    /lib/libc-2.11.3.so
+7ffff7dd9000-7ffff7dda000 rw-p 0015c000 08:01 7005669                    /lib/libc-2.11.3.so
+7ffff7dda000-7ffff7ddf000 rw-p 00000000 00:00 0 
+7ffff7ddf000-7ffff7dfd000 r-xp 00000000 08:01 7005665                    /lib/ld-2.11.3.so
+7ffff7fe6000-7ffff7fe9000 rw-p 00000000 00:00 0 
+7ffff7ff8000-7ffff7ffb000 rw-p 00000000 00:00 0 
+7ffff7ffb000-7ffff7ffc000 r-xp 00000000 00:00 0                          [vdso]
+7ffff7ffc000-7ffff7ffd000 r--p 0001d000 08:01 7005665                    /lib/ld-2.11.3.so
+7ffff7ffd000-7ffff7ffe000 rw-p 0001e000 08:01 7005665                    /lib/ld-2.11.3.so
+7ffff7ffe000-7ffff7fff000 rw-p 00000000 00:00 0 
+7ffffffde000-7ffffffff000 rw-p 00000000 00:00 0                          [stack]
+ffffffffff600000-ffffffffff601000 r-xp 00000000 00:00 0                  [vsyscall]
