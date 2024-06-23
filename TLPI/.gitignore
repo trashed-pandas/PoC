@@ -1,0 +1,6 @@
+# Book source can be downloaded at man7.org
+tlpi-dist/*
+
+*.gz
+*.swp
+
