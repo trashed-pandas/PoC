@@ -1,6 +1,6 @@
 # PoC
 
-A Code Snippets Collection
+Code Snippets Collection
 
 * Code templates
 * Simple tools for code / system dev exploration
