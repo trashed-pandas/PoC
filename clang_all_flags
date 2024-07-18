@@ -1,3 +1,4 @@
+# all clang warning flags that successfully build with a return(0) minimal ansi program 
 -W
 -W#pragma-messages
 -W#warnings
