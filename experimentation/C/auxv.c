@@ -2,9 +2,11 @@
 
 int main(int argc, char **argv){
 
+	// yes, this works and is interesting, but maybe:
+	//    man 3 getauxval
+
 	int i = -1;
 
-	
 	printf("argv[%d]: %d\n", i, (int) argv[i]);
 
 	i++;

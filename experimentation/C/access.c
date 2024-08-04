@@ -1,24 +1,27 @@
-#include <errno.h>
 #include <stdio.h>
 #include <unistd.h>
 
 int main(int argc, char **argv){
-	int i;
-	int retval;
 
-	i = 0;
-	while(argv[i]){
-		printf("argv[%d]: %s\n", i, argv[i]);
-		
-		retval = 0;
-		errno = 0;
-		//retval = access(argv[i], F_OK);
-		retval = access(argv[i], NULL);
+	int i = 1;
 
-		printf("variable -> %s\n", variable);
+	while(i < argc){
 
-		printf("\t%d: %d\n", retval, errno);
-			
+		printf("%s:", argv[i]);
+
+		if(!access(argv[i], F_OK))
+			printf(" exists");
+
+		if(!access(argv[i], R_OK))
+			printf(" read");
+
+		if(!access(argv[i], W_OK))
+			printf(" write");
+
+		if(!access(argv[i], X_OK))
+			printf(" execute");
+
+		printf("\n");
 		i++;
 	}
 	
