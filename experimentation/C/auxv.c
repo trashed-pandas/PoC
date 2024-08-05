@@ -1,12 +1,15 @@
 #include <stdio.h>
 
+// exploring the stack's high address space. This works because argv, envp, and auxv vectors are implemented as NULL terminated themselves.
+
+// yes, this works and is interesting, but maybe:
+//    man 3 getauxval
+
+// This code will throw warnings, which I never like, but lets be honest, this entire snippet is unholy as hell and I'd worry if the compiler _didn't_ complain
+
 int main(int argc, char **argv){
 
-	// yes, this works and is interesting, but maybe:
-	//    man 3 getauxval
-
 	int i = -1;
-
 	printf("argv[%d]: %d\n", i, (int) argv[i]);
 
 	i++;

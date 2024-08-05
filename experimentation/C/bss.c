@@ -4,6 +4,7 @@
 int GLOBAL_BAR;
 int GLOBAL_BAZ = 23;
 
+// explore variable storage arrays for different declarations
 int main(){
 	int i;
 	char *foo = "Hello world!";
@@ -25,6 +26,6 @@ int main(){
 	printf("&GLOBAL_BAZ: %lx\n", (unsigned long) &GLOBAL_BAZ);
 	printf("GLOBAL_BAZ: %d\n", GLOBAL_BAZ);
 
-	sleep(20);
-	
+	printf("\npause()ing so you can go look at /proc/PID. ctrl-c when you're done!\n");	
+	pause();
 }

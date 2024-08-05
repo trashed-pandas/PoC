@@ -1,7 +1,10 @@
 #include <stdio.h>
 
+// snippet to learn about how sizeof(), which isn't a runtime function, interacts with an array whose size is known at compile time
+//  I think the data in the array is a generic openssl cert iirc
 int main(){
 
+	// 
 	unsigned char connector_subject_name[71]={
 		0x30,0x45,0x31,0x0B,0x30,0x09,0x06,0x03,0x55,0x04,0x06,0x13,0x02,0x41,0x55,0x31,
 		0x13,0x30,0x11,0x06,0x03,0x55,0x04,0x08,0x13,0x0A,0x53,0x6F,0x6D,0x65,0x2D,0x53,
@@ -11,7 +14,6 @@ int main(){
 	};
 
 	int connector_subject_name_len = sizeof(connector_subject_name);
-
 	printf("connector_subject_name_len: %d\n", connector_subject_name_len);
 
 	return(0);

@@ -4,9 +4,21 @@
 #include <stdlib.h>
 #include <string.h>
 
+/*
+
+	play with bit arrays and bit masking
+
+	run with:
+		./bit_mask 23 foo 18882 254
+
+*/
 int main(int argc, char **argv){
 	int number;
+
+	printf("UCHAR_MAX: %d\n", UCHAR_MAX);
+	printf("CHAR_BIT: %d\n", CHAR_BIT);
 	char bit_array[(UCHAR_MAX + 1) / CHAR_BIT], *strtol_check=NULL;
+	printf("sizeof(bit_array): %ld\n\n", sizeof(bit_array));
 
 	// First, demonstrate storage.
 	memset(bit_array, 0, sizeof(bit_array));

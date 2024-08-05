@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <sys/stat.h>
 
-
+// simple dump of what the various S_IS* vars. basically dumping most of bits/stat.h via cpp unwrapping
 int main(){
 
 	printf("%x\tS_ISUID\n", S_ISUID);
